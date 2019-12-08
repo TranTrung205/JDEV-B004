@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <title>Page 42</title>
+  <script>
+    function abc() {
+      document.getElementById('btnSubmit').disabled = true;
+    }
+  </script>
+</head>
+
+<body>
+  <form action="" method="">
+    <fieldset>
+      <legend>Your details:</legend>
+      Name: <input type="text" /><br />
+      Email: <input type="email" />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Your review:</legend>
+      How did you hear about us?
+      <select onchange="abc();">
+        <option>Google</option>
+        <option>Newspapers</option>
+        <option>Friends</option>
+      </select>
+      <br /><br />
+      Would you visit again?<br />
+      <input type="radio" name="visit" /> Yes
+      <input type="radio" name="visit" /> No
+      <input type="radio" name="visit" /> Maybe
+      <br /><br />
+      Comments:<br />
+      <textarea cols="30" rows="5">ok fine</textarea>
+      <br />
+      <input type="checkbox" checked />Sign me up for email updates
+      <br />
+      <input id="btnSubmit" type="submit" value="Submit review" />
+    </fieldset>
+  </form>
+</body>
+
+</html>
