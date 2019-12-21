@@ -1,0 +1,50 @@
+div.container {
+  width: 1200px;
+  margin: 0px auto;
+  /* border: 1px solid black; */
+}
+
+div.border_bottom {
+  border-bottom: 1px dashed black;
+  padding: 10px 0px 10px 0px;
+}
+
+div.inline {
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+
+div.float_right {
+  float: right;
+  /* border: 1px solid black; */
+}
+
+ul.menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+figure.caption_right {
+  display: flex;
+  align-items: center;
+}
+
+.align_center {
+  width: max-content;
+  margin: 0px auto;
+  /* border: 1px solid black; */
+}
+
+.text_center {
+  text-align: center;
+}
+
+.padding_top {
+  padding-top: 10px;
+}
