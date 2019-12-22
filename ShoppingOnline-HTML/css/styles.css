@@ -9,6 +9,11 @@ div.border_bottom {
   padding: 10px 0px 10px 0px;
 }
 
+div.border_top {
+  border-top: 1px dashed black;
+  padding: 10px 0px 10px 0px;
+}
+
 div.inline {
   display: inline-block;
   /* border: 1px solid black; */
@@ -41,10 +46,45 @@ figure.caption_right {
   /* border: 1px solid black; */
 }
 
+div.screen_center {
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid black;
+}
+
 .text_center {
   text-align: center;
 }
 
 .padding_top {
   padding-top: 10px;
+}
+
+tr.header {
+  background-color: orange;
+}
+
+tr.odd {
+  background-color: papayawhip;
+  cursor: pointer;
+}
+
+tr.even {
+  background-color: khaki;
+  cursor: pointer;
+}
+
+tr.odd:hover {
+  background-color:lightblue;
+}
+
+tr.even:hover {
+  background-color:lightblue;
 }

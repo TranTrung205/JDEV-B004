@@ -10,32 +10,39 @@
     <div data-include="menu.html"></div>
     <div>
       <h2 class="text_center">SIGN-UP</h2>
-      <table class="align_center">
-        <tr>
-          <td>Username</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>Phone</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit" value="SIGN-UP" /></td>
-        </tr>
-      </table>
+      <form action="./login.html">
+        <table class="align_center">
+          <tr>
+            <td>Username</td>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" minlength="6" required /></td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <td>Phone1</td>
+            <td><input type="number" min="0" required
+              oninput="if (value.length > 10) value = value.slice(0,10)" /></td>
+          </tr>
+          <tr>
+            <td>Phone2</td>
+            <td><input type="text" required pattern="0[\d]{9}" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" required /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="SIGN-UP" /></td>
+          </tr>
+        </table>
+      </form a>
     </div>
   </div>
 </body>

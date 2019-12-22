@@ -10,24 +10,26 @@
     <div data-include="menu.html"></div>
     <div>
       <h2 class="text_center">CUSTOMER LOGIN</h2>
-      <table class="align_center">
-        <tr>
-          <td>Username</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit" value="LOGIN" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a href="">Sign-up</a> for a new account</td>
-        </tr>
-      </table>
+      <form action="./home.html">
+        <table class="align_center">
+          <tr>
+            <td>Username</td>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" minlength="6" required /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="LOGIN" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="./signup.html">Sign-up</a> for a new account</td>
+          </tr>
+        </table>
+      </form>
     </div>
   </div>
 </body>

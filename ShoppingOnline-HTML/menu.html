@@ -1,15 +1,17 @@
 <div class="border_bottom">
   <div class="inline">
     <ul class="menu">
-      <li class="menu"><a href="">Home</a></li>
-      <li class="menu"><a href="">Smartphone</a></li>
-      <li class="menu"><a href="">Laptop</a></li>
-      <li class="menu"><a href="">Tablet</a></li>
+      <li class="menu"><a href="./home.html">Home</a></li>
+      <li class="menu"><a href="./viewproducts.html">Smartphone</a></li>
+      <li class="menu"><a href="./viewproducts.html">Laptop</a></li>
+      <li class="menu"><a href="./viewproducts.html">Tablet</a></li>
     </ul>
   </div>
   <div class="float_right">
-    <form>
-      <input type="text" placeholder="Enter keyword" />
+    <form action="./viewproducts.html">
+      <input type="text" placeholder="Enter keyword" required
+        oninvalid="this.setCustomValidity('Keyword không để trống!')"
+        oninput="this.setCustomValidity('')" />
       <input type="submit" value="SEARCH" />
     </form>
   </div>
